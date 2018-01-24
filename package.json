@@ -1,0 +1,45 @@
+{
+  "name": "@adt/message-tracker",
+  "version": "0.0.1-SNAPSHOT.1",
+  "license": "MIT",
+  "description" : "Tool for tracking and matching messages in request response pattern",
+  "main": "dist/MessageTracker.cjs.js",
+  "module": "dist/MessageTracker.esm.js",
+  "browser": "dist/MessageTracker.umd.js",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "eslint": "^4.12.1",
+    "jasmine": "^2.8.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-babel": "^3.0.3"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jasmine",
+    "eslint": "eslint src/*",
+    "prebuild": "npm run eslint",
+    "pretest": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "dist"
+  ],
+  "keywords": [
+    "request-response",
+    "async",
+    "messaging"
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/AwesomeDevTeam/MessageTracker.git"
+  }
+}
